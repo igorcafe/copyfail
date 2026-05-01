@@ -2,6 +2,9 @@
 
 set -eu
 
+echo "> remove payload.rebuilt.elf just in case"
+rm payload.rebuilt.elf 2> /dev/null || true
+
 echo "> assemble"
 nasm -f bin payload.asm -o payload.rebuilt.elf
 
