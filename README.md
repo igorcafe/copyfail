@@ -5,6 +5,15 @@ Unminified version of [copy-fail exploit](https://copy.fail/) with a few improve
 I've done this just to understand better the vulnerability and the exploit.
 Some parts are still confusing and need better comments.
 
+## Improvements
+
+- unminified code
+- auto checks whether the exploit worked or not
+- try all `su` binaries it can find, not only `/usr/bin/env`
+- .asm of the exploit payload
+- tests to ensure any changes don't break the exploit
+- using constants like `AF_*`, `SOCK_*`, `ALG_*`, `SOL_*`, to make it easier to read
+
 ## Running
 
 ```bash
